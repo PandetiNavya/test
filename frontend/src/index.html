@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Front-end Execution test</title>
+    </head>
+    <body>
+        <h1>
+            This is a test!
+        </h1>
+        <script>
+            //alert('Hello from the front-end!');
+            //console.log('Hello from the front-end!');
+            fetch('/api/users').then(response => response.json())
+                               .then(users => console.log(users));
+        </script>
+    </body>
+</html>
